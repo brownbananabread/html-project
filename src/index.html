@@ -1,7 +1,7 @@
 
 <html lang="en">
   <head>
-    <title>Home | ESS</title>
+    <title>Eternal Safety Solutions</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <link rel="preconnect" href="https://fonts.gstatic.com"/>
@@ -15,80 +15,269 @@
   <body class="antialiased bg-body text-body font-body">
     <div>
       <div>
-        <section class="relative h-screen flex flex-col overflow-hidden" x-data="{ mobileNavOpen: false, currentImage: 0, images: ['assets/images/hero-1.jpg', 'assets/images/hero-2.jpg', 'assets/images/hero-3.jpg', 'assets/images/hero-4.jpg'] }" x-init="setInterval(() => { currentImage = (currentImage + 1) % images.length }, 4000)">
-        <div id="header-placeholder"></div>
-        <div class="relative flex-1 flex items-center bg-blue-900 overflow-hidden">
-            <!-- Fading Background Images -->
-            <template x-for="(image, index) in images" :key="index">
-              <div
-                class="absolute inset-0 transition-opacity duration-1000 ease-in-out"
-                :class="currentImage === index ? 'opacity-20' : 'opacity-0'"
-                :style="`background-image: url('${image}'); background-size: cover; background-position: center;`"
-              ></div>
-            </template>
-
-            <!-- Decorative Wave -->
-            <img class="absolute top-0 right-0 opacity-30" src="assets/quantam-assets/pricing/waves-right-top.png" alt=""/>
-
-            <div class="container mx-auto px-4 relative">
-              <div class="max-w-3xl mx-auto text-center">
-                <div class="flex mb-8 items-center justify-center">
-                  <svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="12" height="12" rx="2" fill="rgba(255, 255, 255, 0.2)"></rect>
-                    <circle cx="6" cy="6" r="4" fill="#ffffff"></circle>
-                  </svg><span class="ml-2 text-sm font-medium text-white opacity-90">WHS Safety Consulting</span>
+        <div>
+          <section class="overflow-hidden bg-orange-50 h-screen flex flex-col" x-data="{ mobileNavOpen: false }">
+            <div id="header-placeholder"></div>
+            <div class="relative flex-1 flex items-center justify-center"><img class="hidden md:block absolute top-0 left-0 mt-28 w-32 lg:w-64 xl:w-auto" src="assets/quantam-assets/headers/header-4-left-top.png" alt=""/><img class="hidden md:block absolute top-0 right-0 mt-20 w-32 lg:w-64 xl:w-auto" src="assets/quantam-assets/headers/header-4-right-top.png" alt=""/>
+              <div class="container mx-auto px-4 relative h-full flex flex-col justify-center">
+                <div class="max-w-lg xl:max-w-xl mx-auto my-auto mb-12 lg:mb-0 text-center">
+                  <div class="flex mb-6 items-center justify-center">
+                    <svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="12" height="12" rx="2" fill="#ffffff"></rect>
+                      <circle cx="6" cy="6" r="4" fill="#1C3F7C"></circle>
+                    </svg><span class="ml-2 text-sm font-medium">Capability Statement</span>
+                  </div>
+                  <h1 class="font-heading text-5xl xs:text-7xl xl:text-7xl tracking-tight mb-8 font-semibold">WE MAKE SAFETY ETERNAL</h1>
+                  <p class="text-lg text-gray-700 mb-10">ESS is founded on the principles of assisting businesses in achieving more than just compliance. We strive to build proactive and effective safety cultures, driving businesses forward in their own industries.</p>
+                  <div class="flex flex-col sm:flex-row justify-center"><a class="inline-flex py-4 px-6 mb-3 sm:mb-0 sm:mr-4 items-center justify-center text-lg font-medium text-white hover:text-blue-900 border border-blue-900 hover:border-blue-500 bg-blue-900 hover:bg-blue-500 hover:text-white rounded-full transition duration-200" href="solutions">See our solutions</a><a class="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-black hover:text-white border border-blue-900 hover:bg-blue-900 rounded-full transition duration-200" href="contact">Get in touch</a></div>
                 </div>
-                <h1 class="font-heading text-5xl sm:text-6xl lg:text-7xl tracking-xs text-white mb-6">We Make Safety Eternal</h1>
-                <p class="text-lg text-white opacity-90 mb-10">ESS is founded on the principles of assisting businesses in achieving more than just compliance. We strive to build proactive and effective safety cultures, driving businesses forward in their own industries.</p>
-                <div class="flex flex-col sm:flex-row justify-center gap-4">
-                  <a class="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-white border border-blue-500 hover:border-white hover:text-blue-900 bg-blue-500 hover:bg-white rounded-full transition duration-200" href="pricing">See our services</a>
-                  <a class="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-white border border-white hover:border-blue-500 hover:text-blue-900 hover:bg-blue-500 rounded-full transition duration-200" href="contact">Book a free consultation</a>
+                <div class="flex -mx-4 items-end relative">
+                  <div class="w-1/3 xs:w-1/2 lg:w-auto px-4"><img class="block h-32 lg:h-48" src="assets/quantam-assets/headers/header-4-bottom-lleft.png" alt=""/></div>
+                  <div class="w-2/3 xs:w-1/2 lg:w-auto ml-auto px-4"><img class="block w-1/2 md:w-64 lg:w-auto ml-auto" src="assets/quantam-assets/headers/header-4-bottom-right.png" alt=""/></div>
+                  <div class="absolute bottom-0 left-0 w-full py-32 bg-gradient-to-t from-orange-50 to-transparent"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <section class="py-12 lg:py-24 bg-blue-900">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12 md:mb-20">
+            <h2 class="font-heading text-4xl sm:text-5xl tracking-sm mb-4 text-white">Meet Our Expert</h2>
+            <p class="text-lg text-blue-100">Leading WHS professional dedicated to building safer workplaces across Australia</p>
+          </div>
+          <div class="max-w-5xl mx-auto bg-blue-900 rounded-3xl p-8 lg:p-12 shadow-xl">
+            <div class="flex flex-wrap justify-center items-center gap-8 lg:gap-16">
+              <div class="w-full lg:w-auto lg:flex-shrink-0">
+                <div class="relative max-w-md lg:max-w-sm mx-auto">
+                  <img class="block w-full h-auto object-cover rounded-2xl shadow-lg" src="assets/quantam-assets/team/photo-worker-1.png" alt="Jenny Wilson - Senior WHS Consultant"/>
+                </div>
+              </div>
+              <div class="w-full lg:flex-1 lg:max-w-xl">
+                <div class="max-w-lg mx-auto lg:mx-0">
+                  <h3 class="text-3xl font-semibold text-white mb-4">Jenny Wilson</h3>
+                  <p class="text-xl text-blue-100 mb-6">Senior WHS Consultant</p>
+                  <p class="text-white mb-4">With over 15 years of experience in workplace health and safety, Jenny leads our consulting team with expertise in ISO management systems, risk assessment, and safety culture development.</p>
+                  <p class="text-white mb-6">Jenny has successfully guided hundreds of Australian businesses through ISO certification processes and compliance frameworks, ensuring sustainable safety outcomes across diverse industries.</p>
+                  <div class="flex flex-wrap gap-3">
+                    <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-full px-4 py-2">
+                      <span class="text-white text-sm font-medium">ISO 45001 Expert</span>
+                    </div>
+                    <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-full px-4 py-2">
+                      <span class="text-white text-sm font-medium">Risk Management</span>
+                    </div>
+                    <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-full px-4 py-2">
+                      <span class="text-white text-sm font-medium">Training Specialist</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="hidden fixed top-0 left-0 bottom-0 w-full xs:w-5/6 xs:max-w-md z-50" :class="{'block': mobileNavOpen, 'hidden': !mobileNavOpen}">
-            <div class="fixed inset-0 bg-violet-900 opacity-20" x-on:click="mobileNavOpen = !mobileNavOpen"></div>
-            <nav class="relative flex flex-col py-7 px-10 w-full h-full bg-white overflow-y-auto">
-              <div class="flex items-center justify-between"><a class="inline-block" href="#"><img class="h-16" src="assets/images/logo-primary.png" alt=""/></a>
-                <div class="flex items-center"><a class="inline-flex py-2.5 px-4 mr-6 items-center justify-center text-sm font-medium text-blue-900 hover:text-white border border-blue-900 hover:bg-blue-900 rounded-full transition duration-200" href="#">Login</a>
-                  <button x-on:click="mobileNavOpen = !mobileNavOpen">
-                    <svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M23.2 8.79999L8.80005 23.2M8.80005 8.79999L23.2 23.2" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                  </button>
+        </div>
+      </section>
+      <section class="py-12 lg:py-24">
+        <div class="container mx-auto px-4">
+          <div class="max-w-lg mx-auto lg:max-w-none">
+            <div class="flex flex-wrap -mx-4">
+              <div class="w-full lg:w-1/2 px-4 mb-16 lg:mb-0">
+                <div class="max-w-lg">
+                  <p class="text-2xl font-medium mb-20">Eternal Safety Solutions offers a range of WHS consultation services to suit your business scale, operations, and requirements.</p>
+                  <div>
+                    <div class="cursor-pointer text-gray-500" x-data="{ accordion: false }" x-on:click.prevent="accordion = !accordion" :class="{'text-black mb-8': accordion, 'text-gray-500 mb-0': !accordion }">
+                      <div class="relative">
+                        <div class="inline-block relative">
+                          <h4 class="text-5xl">ISO Systems</h4>
+                          <div class="relative transition duration-250" x-ref="container" :style="accordion ? 'width: ' + $refs.container.scrollWidth + 'px' : 'opacity: 0'">
+                            <div class="absolute bottom-0 left-0 -mb-6 transform translate-y-1/2 w-full border-b-2 border-gray-100"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="relative overflow-hidden h-0 pr-5 mt-12 duration-500" x-ref="container" :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''">
+                        <p class="text-lg text-gray-600 mb-12">We can create, design, and implement a system dedicated to assisting your business in achieving accreditation to the ISO45001, ISO14001, & ISO9001 standards.</p><a class="absolute bottom-0 left-0 inline-block text-lg font-medium text-black hover:text-blue-600" href="solutions">Learn more</a>
+                      </div>
+                    </div>
+                    <div class="cursor-pointer text-gray-500" x-data="{ accordion: false }" x-on:click.prevent="accordion = !accordion" :class="{'text-black mb-8': accordion, 'text-gray-500 mb-0': !accordion }">
+                      <div class="relative">
+                        <div class="inline-block relative">
+                          <h4 class="text-5xl">Risk Management</h4>
+                          <div class="relative transition duration-250" x-ref="container" :style="accordion ? 'width: ' + $refs.container.scrollWidth + 'px' : 'opacity: 0'">
+                            <div class="absolute bottom-0 left-0 -mb-6 transform translate-y-1/2 w-full border-b-2 border-gray-100"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="relative overflow-hidden h-0 pr-5 mt-12 duration-500" x-ref="container" :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''">
+                        <p class="text-lg text-gray-600 mb-12">ESS offers comprehensive risk management solutions including organisational risk assessments, plant risk assessments, traffic management, SWMS, and safe work procedures.</p><a class="absolute bottom-0 left-0 inline-block text-lg font-medium text-black hover:text-blue-600" href="solutions">Learn more</a>
+                      </div>
+                    </div>
+                    <div class="cursor-pointer text-gray-500" x-data="{ accordion: false }" x-on:click.prevent="accordion = !accordion" :class="{'text-black mb-8': accordion, 'text-gray-500 mb-0': !accordion }">
+                      <div class="relative">
+                        <div class="inline-block relative">
+                          <h4 class="text-5xl">Site Inspections</h4>
+                          <div class="relative transition duration-250" x-ref="container" :style="accordion ? 'width: ' + $refs.container.scrollWidth + 'px' : 'opacity: 0'">
+                            <div class="absolute bottom-0 left-0 -mb-6 transform translate-y-1/2 w-full border-b-2 border-gray-100"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="relative overflow-hidden h-0 pr-5 mt-12 duration-500" x-ref="container" :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''">
+                        <p class="text-lg text-gray-600 mb-12">We offer hazard inspections of your site to identify relevant hazards and risks your workers may be exposed to, with proposed control measures to eliminate or minimise risks.</p><a class="absolute bottom-0 left-0 inline-block text-lg font-medium text-black hover:text-blue-600" href="solutions">Learn more</a>
+                      </div>
+                    </div>
+                    <div class="cursor-pointer text-gray-500" x-data="{ accordion: false }" x-on:click.prevent="accordion = !accordion" :class="{'text-black mb-8': accordion, 'text-gray-500 mb-0': !accordion }">
+                      <div class="relative">
+                        <div class="inline-block relative">
+                          <h4 class="text-5xl">Training</h4>
+                          <div class="relative transition duration-250" x-ref="container" :style="accordion ? 'width: ' + $refs.container.scrollWidth + 'px' : 'opacity: 0'">
+                            <div class="absolute bottom-0 left-0 -mb-6 transform translate-y-1/2 w-full border-b-2 border-gray-100"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="relative overflow-hidden h-0 pr-5 mt-12 duration-500" x-ref="container" :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''">
+                        <p class="text-lg text-gray-600 mb-12">ESS offers training solutions including risk management, due diligence & compliance, contractor management, and bespoke training packages custom created upon request.</p><a class="absolute bottom-0 left-0 inline-block text-lg font-medium text-black hover:text-blue-600" href="solutions">Learn more</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="pt-20 pb-12 mb-auto">
-                <ul class="flex-col">
-                  <li class="mb-6"><a class="inline-block text-blue-900 hover:text-blue-700 font-medium" href="about">About</a></li>
-                  <li class="mb-6"><a class="inline-block text-blue-900 hover:text-blue-700 font-medium" href="pricing">Solutions</a></li>
-                  <li class="mb-6"><a class="inline-block text-blue-900 hover:text-blue-700 font-medium" href="#process">Process</a></li>
-                  <li class="mb-6"><a class="inline-block text-blue-900 hover:text-blue-700 font-medium" href="blog">Blog</a></li>
-                  <li><a class="inline-block text-blue-900 hover:text-blue-700 font-medium" href="contact">Contact Us</a></li>
-                </ul>
-              </div>
-              <div class="flex items-center justify-between"><a class="inline-flex items-center text-lg font-medium text-blue-900" href="#"><span>
-                    <svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6.4 6.39999H25.6C26.92 6.39999 28 7.47999 28 8.79999V23.2C28 24.52 26.92 25.6 25.6 25.6H6.4C5.08 25.6 4 24.52 4 23.2V8.79999C4 7.47999 5.08 6.39999 6.4 6.39999Z" stroke="#646A69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M28 8.8L16 17.2L4 8.8" stroke="#646A69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg></span>                  <span class="ml-2">Newsletter</span></a>
-                <div class="flex items-center"><a class="inline-block mr-4" href="#">
-                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0_282_7847)">
-                        <path d="M11.548 19.9999V10.8776H14.6087L15.0679 7.32146H11.548V5.05136C11.548 4.02209 11.8326 3.32066 13.3103 3.32066L15.1918 3.31988V0.139123C14.8664 0.0968385 13.7495 -0.000106812 12.4495 -0.000106812C9.73488 -0.000106812 7.87642 1.65686 7.87642 4.69916V7.32146H4.8064V10.8776H7.87642V19.9999H11.548Z" fill="#ffffff"></path>
-                      </g>
-                    </svg></a>                  <a class="inline-block mr-4" href="#">
-                    <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 17.7383 21.3889 19.2135 20.3012 20.3012C19.2135 21.3889 17.7383 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 6.26174 2.61107 4.78649 3.69878 3.69878C4.78649 2.61107 6.26174 2 7.8 2ZM7.6 4C6.64522 4 5.72955 4.37928 5.05442 5.05442C4.37928 5.72955 4 6.64522 4 7.6V16.4C4 18.39 5.61 20 7.6 20H16.4C17.3548 20 18.2705 19.6207 18.9456 18.9456C19.6207 18.2705 20 17.3548 20 16.4V7.6C20 5.61 18.39 4 16.4 4H7.6ZM17.25 5.5C17.5815 5.5 17.8995 5.6317 18.1339 5.86612C18.3683 6.10054 18.5 6.41848 18.5 6.75C18.5 7.08152 18.3683 7.39946 18.1339 7.63388C17.8995 7.8683 17.5815 8 17.25 8C16.9185 8 16.6005 7.8683 16.3661 7.63388C16.1317 7.39946 16 7.08152 16 6.75C16 6.41848 16.1317 6.10054 16.3661 5.86612C16.6005 5.6317 16.9185 5.5 17.25 5.5ZM12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7ZM12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9Z" fill="currentColor"></path>
-                    </svg></a>                  <a class="inline-block" href="#">
-                    <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M19 3C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19ZM18.5 18.5V13.2C18.5 12.3354 18.1565 11.5062 17.5452 10.8948C16.9338 10.2835 16.1046 9.94 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17C14.6813 12.17 15.0374 12.3175 15.2999 12.5801C15.5625 12.8426 15.71 13.1987 15.71 13.57V18.5H18.5ZM6.88 8.56C7.32556 8.56 7.75288 8.383 8.06794 8.06794C8.383 7.75288 8.56 7.32556 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19C6.43178 5.19 6.00193 5.36805 5.68499 5.68499C5.36805 6.00193 5.19 6.43178 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56ZM8.27 18.5V10.13H5.5V18.5H8.27Z" fill="currentColor"></path>
-                    </svg></a></div>
-              </div>
-            </nav>
+              <div class="w-full lg:w-1/2 px-4"><img class="block w-full lg:max-w-md h-full lg:ml-auto" src="assets/quantam-assets/features/image-right.png" alt=""/></div>
+            </div>
           </div>
-        </section>
+        </div>
+      </section>
+      <section class="py-12 lg:py-24 bg-blue-900">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-20">
+            <h2 class="font-heading text-6xl text-white mb-6">Why Choose ESS</h2>
+            <p class="text-lg text-white opacity-80">We are committed to building proactive and effective safety cultures</p>
+          </div>
+          <div class="max-w-md mx-auto lg:max-w-none">
+            <div class="flex flex-wrap -mx-4">
+              <div class="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
+                <div class="h-full py-10 px-5 xs:px-10 bg-white rounded-2xl shadow-md">
+                  <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 8C0 3.58172 3.58172 0 8 0H40C44.4183 0 48 3.58172 48 8V40C48 44.4183 44.4183 48 40 48H8C3.58172 48 0 44.4183 0 40V8Z" fill="#1C3F7C"></path>
+                    <path d="M24 10L26.4 20.6L34 18L28 26L38 28L26 32L28 42L24 34L20 42L22 32L10 28L20 26L14 18L21.6 20.6L24 10Z" fill="#ffffff"></path>
+                  </svg>
+                  <h5 class="text-2xl xs:text-3xl lg:text-4xl xl:text-5xl mt-6 mb-4">Compliance</h5><span class="block mb-6 text-base lg:text-xl font-medium">Expert WHS Knowledge</span>
+                  <p class="text-gray-700">We have a wealth of knowledge in ensuring your business is compliant with the relevant WHS legislation across multiple industries including construction, aged care, transport, manufacturing, and more.</p>
+                </div>
+              </div>
+              <div class="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
+                <div class="h-full py-10 px-5 xs:px-10 bg-white rounded-2xl shadow-md">
+                  <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 8C0 3.58172 3.58172 0 8 0H40C44.4183 0 48 3.58172 48 8V40C48 44.4183 44.4183 48 40 48H8C3.58172 48 0 44.4183 0 40V8Z" fill="#1C3F7C"></path>
+                    <path d="M24 10.6667C20.6863 10.6667 18 13.353 18 16.6667C18 19.9805 20.6863 22.6667 24 22.6667C27.3137 22.6667 30 19.9805 30 16.6667C30 13.353 27.3137 10.6667 24 10.6667Z" fill="#ffffff"></path>
+                    <path d="M24 24.0001C17.6563 24.0001 13.2222 28.6949 12.6725 34.542C12.6374 34.9156 12.7613 35.2868 13.014 35.5644C13.2667 35.8419 13.6246 36.0001 14 36.0001H34C34.3753 36.0001 34.7332 35.8419 34.9859 35.5644C35.2386 35.2868 35.3626 34.9156 35.3274 34.542C34.7778 28.6949 30.3437 24.0001 24 24.0001Z" fill="#ffffff"></path>
+                  </svg>
+                  <h5 class="text-2xl xs:text-3xl lg:text-4xl xl:text-5xl mt-6 mb-4">Multi-Service</h5><span class="block mb-6 text-base lg:text-xl font-medium">Comprehensive Offering</span>
+                  <p class="text-gray-700">ESS offers a variety of services to suit the requirements of your business including WHS consulting, system builds & implementation, audits, site inspections, and training solutions.</p>
+                </div>
+              </div>
+              <div class="w-full lg:w-1/3 px-4">
+                <div class="h-full py-10 px-5 xs:px-10 bg-white rounded-2xl shadow-md">
+                  <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 8C0 3.58172 3.58172 0 8 0H40C44.4183 0 48 3.58172 48 8V40C48 44.4183 44.4183 48 40 48H8C3.58172 48 0 44.4183 0 40V8Z" fill="#1C3F7C"></path>
+                    <path d="M18 12L30 12C32 12 34 14 34 16L34 32C34 34 32 36 30 36L18 36C16 36 14 34 14 32L14 16C14 14 16 12 18 12Z" stroke="#ffffff" stroke-width="2" fill="none"></path>
+                    <path d="M20 20L28 20M20 24L28 24M20 28L24 28" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path>
+                  </svg>
+                  <h5 class="text-2xl xs:text-3xl lg:text-4xl xl:text-5xl mt-6 mb-4">People Focused</h5><span class="block mb-6 text-base lg:text-xl font-medium">Personable Approach</span>
+                  <p class="text-gray-700">We pride ourselves on providing a personable approach, ensuring your staff feel included in steering safety processes and building a strong safety culture throughout your organisation.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-12 lg:py-24 overflow-hidden" x-data="{ activeSlide: 1, slideCount: 2 }">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap items-center mb-12 md:mb-20 -mx-4">
+            <div class="w-full md:w-1/2 px-4 mb-12 md:mb-0">
+              <div>
+                <h1 class="font-heading text-5xl sm:text-6xl mb-4">Our Process</h1>
+                <p class="text-gray-700">We pride ourselves on a streamlined and simple approach to WHS consultancy to best suit your business requirements and achieving compliance.</p>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 px-4">
+              <div class="flex items-center justify-end">
+                <button class="inline-block text-gray-800 mr-1" x-on:click.prevent="activeSlide = 1">
+                  <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.4">
+                      <path d="M17.5 29.1667L8.33333 20.0001L17.5 10.8334" stroke="currentColor" stroke-width="1.5"></path>
+                      <path d="M8.33329 20L31.6666 20" stroke="currentColor" stroke-width="1.5"></path>
+                    </g>
+                  </svg>
+                </button>
+                <button class="inline-block text-black hover:text-blue-500" x-on:click.prevent="activeSlide = 2">
+                  <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.5 10.8333L31.6667 19.9999L22.5 29.1666" stroke="currentColor" stroke-width="1.5"></path>
+                    <path d="M31.6666 20H8.33331" stroke="currentColor" stroke-width="1.5"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex transition-transform duration-1000 ease-in-out" :style="'transform: translateX(-' + (activeSlide - 1) * 100.5 + '%)'">
+            <div class="relative flex-shrink-0 w-full sm:w-87 h-full sm:h-112 mr-8 overflow-hidden">
+              <div class="absolute bottom-0 left-0 w-full p-4">
+                <div class="p-4 bg-white rounded-xl"><span class="block font-medium">Stage 1</span>                                  <span class="text-sm text-gray-700">Consultation</span></div>
+              </div><img class="block w-full h-full object-cover rounded-2xl" src="assets/quantam-assets/team/photo-worker-1.png" alt=""/>
+            </div>
+            <div class="relative flex-shrink-0 w-full sm:w-87 h-full sm:h-112 mr-8 overflow-hidden">
+              <div class="absolute bottom-0 left-0 w-full p-4">
+                <div class="p-4 bg-white rounded-xl"><span class="block font-medium">Stage 2</span>                                  <span class="text-sm text-gray-700">Implementation</span></div>
+              </div><img class="block w-full h-full object-cover rounded-2xl" src="assets/quantam-assets/team/photo-worker-2.png" alt=""/>
+            </div>
+            <div class="relative flex-shrink-0 w-full sm:w-87 h-full sm:h-112 mr-8 overflow-hidden">
+              <div class="absolute bottom-0 left-0 w-full p-4">
+                <div class="p-4 bg-white rounded-xl"><span class="block font-medium">Stage 3</span>                                  <span class="text-sm text-gray-700">Review</span></div>
+              </div><img class="block w-full h-full object-cover rounded-2xl" src="assets/quantam-assets/team/photo-worker-3.png" alt=""/>
+            </div>
+            <div class="relative flex-shrink-0 w-full sm:w-87 h-full sm:h-112 mr-8 overflow-hidden">
+              <div class="absolute bottom-0 left-0 w-full p-4">
+                <div class="p-4 bg-white rounded-xl"><span class="block font-medium">Stage 1</span>                                  <span class="text-sm text-gray-700">Consultation</span></div>
+              </div><img class="block w-full h-full object-cover rounded-2xl" src="assets/quantam-assets/team/photo-worker-1.png" alt=""/>
+            </div>
+            <div class="relative flex-shrink-0 w-full sm:w-87 h-full sm:h-112 mr-8 overflow-hidden">
+              <div class="absolute bottom-0 left-0 w-full p-4">
+                <div class="p-4 bg-white rounded-xl"><span class="block font-medium">Stage 2</span>                                  <span class="text-sm text-gray-700">Implementation</span></div>
+              </div><img class="block w-full h-full object-cover rounded-2xl" src="assets/quantam-assets/team/photo-worker-2.png" alt=""/>
+            </div>
+            <div class="relative flex-shrink-0 w-full sm:w-87 h-full sm:h-112 mr-8 overflow-hidden">
+              <div class="absolute bottom-0 left-0 w-full p-4">
+                <div class="p-4 bg-white rounded-xl"><span class="block font-medium">Stage 3</span>                                  <span class="text-sm text-gray-700">Review</span></div>
+              </div><img class="block w-full h-full object-cover rounded-2xl" src="assets/quantam-assets/team/photo-worker-3.png" alt=""/>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-12 lg:py-24 xl:py-32 bg-blue-900 relative overflow-hidden"><img class="absolute top-0 left-0 w-full h-full" src="assets/quantam-assets/cta/bg-light-lines.png" alt=""/>
+        <div class="container mx-auto px-4 relative">
+          <div class="max-w-6xl mx-auto text-center">
+            <h1 class="font-heading text-4xl sm:text-5xl tracking-sm mb-6 text-white">Ready to Build a Safer Workplace?</h1>
+            <p class="text-xl text-white opacity-90 mb-12">Partner with ESS to create a proactive safety culture and achieve lasting WHS compliance for your business</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-12">
+              <a class="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-white border border-blue-500 hover:border-white hover:text-blue-900 bg-blue-500 hover:bg-white rounded-full transition duration-200" href="contact">Book Free Consultation</a>
+              <a class="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-white border border-white hover:border-blue-500 hover:text-blue-900 hover:bg-blue-500 rounded-full transition duration-200" href="solutions">View Our Solutions</a>
+            </div>
+            <div class="flex flex-col md:flex-row justify-center gap-8 text-white">
+              <div class="flex items-center justify-center gap-3">
+                <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.4 6.39999H17.6C18.92 6.39999 20 7.47999 20 8.79999V17.2C20 18.52 18.92 19.6 17.6 19.6H6.4C5.08 19.6 4 18.52 4 17.2V8.79999C4 7.47999 5.08 6.39999 6.4 6.39999Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M20 8.8L12 14.2L4 8.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <span>levi@eternalsafetysolutions.com.au</span>
+              </div>
+              <div class="flex items-center justify-center gap-3">
+                <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 4C9.597 4 9 4.597 9 5C9 17.8518 14.1482 23 22 23C22.403 23 23 22.403 23 22V18.2667C23 17.6779 22.6138 17.1588 22.0498 16.9896L18.7165 15.8896C18.2466 15.7486 17.7374 15.877 17.3905 16.2239L16.3288 17.2856C14.2738 16.347 12.653 14.7262 11.7144 12.6712L12.7761 11.6095C13.123 11.2626 13.2514 10.7534 13.1104 10.2835L12.0104 6.9502C11.8412 6.3862 11.3221 6 10.7333 6H10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+                </svg>
+                <span>0478 669 655</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <div id="footer-placeholder"></div>
     </div>
   </body>
