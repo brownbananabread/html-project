@@ -11,6 +11,7 @@
     <style>html{visibility:hidden;opacity:0}</style>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer="defer"></script>
     <script type="module" src="/js/main.js"></script>
+    <script type="module" src="/js/articles.js"></script>
   </head>
   <body class="antialiased bg-body text-body font-body">
     <div>
@@ -22,177 +23,27 @@
         </div>
       </div>
       </div>
-      <section class="relative py-16 lg:py-32 bg-blue-900 overflow-hidden"><img class="absolute top-0 right-0" src="assets/quantam-assets/pricing/waves-right-top.png" alt=""/>
-        <div class="container mx-auto px-4 relative">
-          <div class="max-w-2xl mx-auto text-center">
-            <h1 class="font-heading text-5xl sm:text-6xl lg:text-7xl tracking-tight text-white mb-6 font-semibold">Safety Insights & Updates</h1>
-            <p class="text-xl text-white opacity-90">Stay informed with the latest WHS news, compliance updates, and workplace safety best practices from our team of experts</p>
+      <!-- Articles listing view (shown when no ?name= query param) -->
+      <section id="articles-listing-view">
+        <section class="relative py-16 lg:py-32 bg-blue-900 overflow-hidden"><img class="absolute top-0 right-0" src="assets/images/waves-right-top.png" alt=""/>
+          <div class="container mx-auto px-4 relative">
+            <div class="max-w-2xl mx-auto text-center">
+              <h1 class="font-heading text-5xl sm:text-6xl lg:text-7xl tracking-tight text-white mb-6 font-semibold">Safety Insights & Updates</h1>
+              <p class="text-xl text-white opacity-90">Stay informed with the latest WHS news, compliance updates, and workplace safety best practices from our team of experts</p>
+            </div>
           </div>
-        </div>
-      </section>
-      <section class="py-16 lg:py-32 bg-orange-50">
-        <div class="container mx-auto px-4">
-          <div class="mb-16 lg:mb-20">
-            <div class="flex items-center justify-between mb-8">
+        </section>
+        <section class="py-16 lg:py-32 bg-orange-50">
+          <div class="container mx-auto px-4">
+            <div class="mb-16 lg:mb-20">
               <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight font-heading">Featured Articles</h2>
-              <div class="flex gap-2">
-                <button class="px-4 py-2 text-sm font-medium text-white bg-blue-500 rounded-full hover:bg-blue-600 transition duration-200">All</button>
-                <button class="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-full hover:bg-gray-200 transition duration-200">Compliance</button>
-                <button class="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-full hover:bg-gray-200 transition duration-200">ISO Standards</button>
-                <button class="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-full hover:bg-gray-200 transition duration-200">Risk Management</button>
-              </div>
             </div>
+            <div id="articles-container"></div>
           </div>
-          <div class="flex flex-wrap -mx-4 mb-16">
-            <div class="w-full lg:w-2/3 px-4 mb-8 lg:mb-0">
-              <a class="block group h-full bg-white border border-gray-100 hover:border-blue-500 rounded-3xl shadow-sm hover:shadow-xl overflow-hidden transition-all duration-300" href="/articles/understanding-new-whs-regulations-2024">
-                <div class="relative overflow-hidden bg-gray-200 h-80">
-                  <div class="absolute inset-0 bg-gradient-to-t from-blue-900/90 to-transparent"></div>
-                  <div class="absolute bottom-0 left-0 right-0 p-8">
-                    <span class="inline-block px-3 py-1 mb-4 text-xs font-medium text-white bg-blue-500 rounded-full">Featured</span>
-                    <h3 class="text-3xl lg:text-4xl font-semibold text-white mb-4">Understanding the New WHS Regulations for 2024: What Your Business Needs to Know</h3>
-                    <p class="text-white/90 mb-4">Recent updates to WHS legislation introduce significant changes for Australian businesses. Learn how these new requirements impact your compliance obligations and what steps you need to take now.</p>
-                    <div class="flex items-center">
-                      <div class="flex items-center">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-2">
-                          <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 3C11.66 3 13 4.34 13 6C13 7.66 11.66 9 10 9C8.34 9 7 7.66 7 6C7 4.34 8.34 3 10 3ZM10 17.2C7.5 17.2 5.29 15.92 4 13.98C4.03 11.99 8 10.9 10 10.9C11.99 10.9 15.97 11.99 16 13.98C14.71 15.92 12.5 17.2 10 17.2Z" fill="white"/>
-                        </svg>
-                        <span class="text-sm font-medium text-white">ESS Team</span>
-                      </div>
-                      <span class="mx-3 text-white">•</span>
-                      <span class="text-sm text-white">8 min read</span>
-                      <span class="mx-3 text-white">•</span>
-                      <span class="text-sm text-white">December 15, 2024</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="w-full lg:w-1/3 px-4">
-              <div class="flex flex-col gap-6">
-                <a class="block group p-6 bg-white border border-gray-100 hover:border-blue-500 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300" href="/articles/achieving-iso-45001-certification">
-                  <span class="inline-block px-3 py-1 mb-3 text-xs font-medium text-blue-900 bg-blue-100 rounded-full">ISO Standards</span>
-                  <h4 class="text-xl font-semibold mb-3 group-hover:text-blue-500 transition duration-200">Achieving ISO 45001 Certification: A Step-by-Step Guide</h4>
-                  <p class="text-gray-600 text-sm mb-4 leading-relaxed">Navigating the ISO 45001 certification process can seem daunting. Our comprehensive guide breaks down each stage...</p>
-                  <div class="flex items-center text-sm text-gray-600">
-                    <span>5 min read</span>
-                    <span class="mx-2">•</span>
-                    <span>Dec 10, 2024</span>
-                  </div>
-                </a>
-                <a class="block group p-6 bg-white border border-gray-100 hover:border-blue-500 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300" href="/articles/5-common-workplace-hazards">
-                  <span class="inline-block px-3 py-1 mb-3 text-xs font-medium text-blue-900 bg-blue-100 rounded-full">Risk Management</span>
-                  <h4 class="text-xl font-semibold mb-3 group-hover:text-blue-500 transition duration-200">5 Common Workplace Hazards and How to Control Them</h4>
-                  <p class="text-gray-600 text-sm mb-4 leading-relaxed">Identify the most prevalent workplace hazards across Australian industries and learn practical control measures...</p>
-                  <div class="flex items-center text-sm text-gray-600">
-                    <span>6 min read</span>
-                    <span class="mx-2">•</span>
-                    <span>Dec 5, 2024</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-wrap -mx-4">
-            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-              <a class="block group h-full bg-white border border-gray-100 hover:border-blue-500 rounded-3xl shadow-sm hover:shadow-xl overflow-hidden transition-all duration-300" href="/articles/building-proactive-safety-culture">
-                <div class="p-6">
-                  <div class="mb-4">
-                    <span class="inline-block px-3 py-1 text-xs font-medium text-blue-900 bg-blue-100 rounded-full">Training</span>
-                  </div>
-                  <h4 class="text-2xl font-semibold mb-4 group-hover:text-blue-500 transition duration-200">Building a Proactive Safety Culture: Training Best Practices</h4>
-                  <p class="text-gray-600 mb-6 leading-relaxed">Discover how effective training programs can transform workplace safety culture and drive lasting behavioral change across your organization.</p>
-                  <div class="flex items-center text-sm text-gray-600">
-                    <span>7 min read</span>
-                    <span class="mx-2">•</span>
-                    <span>November 28, 2024</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-              <a class="block group h-full bg-white border border-gray-100 hover:border-blue-500 rounded-3xl shadow-sm hover:shadow-xl overflow-hidden transition-all duration-300" href="/articles/essential-guide-whs-documentation">
-                <div class="p-6">
-                  <div class="mb-4">
-                    <span class="inline-block px-3 py-1 text-xs font-medium text-blue-900 bg-blue-100 rounded-full">Compliance</span>
-                  </div>
-                  <h4 class="text-2xl font-semibold mb-4 group-hover:text-blue-500 transition duration-200">The Essential Guide to WHS Documentation and Record Keeping</h4>
-                  <p class="text-gray-600 mb-6 leading-relaxed">Proper documentation is critical for WHS compliance. Learn what records you must maintain and how long to keep them.</p>
-                  <div class="flex items-center text-sm text-gray-600">
-                    <span>6 min read</span>
-                    <span class="mx-2">•</span>
-                    <span>November 22, 2024</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-              <a class="block group h-full bg-white border border-gray-100 hover:border-blue-500 rounded-3xl shadow-sm hover:shadow-xl overflow-hidden transition-all duration-300" href="/articles/construction-site-safety-inspection-checklist">
-                <div class="p-6">
-                  <div class="mb-4">
-                    <span class="inline-block px-3 py-1 text-xs font-medium text-blue-900 bg-blue-100 rounded-full">Site Safety</span>
-                  </div>
-                  <h4 class="text-2xl font-semibold mb-4 group-hover:text-blue-500 transition duration-200">Construction Site Safety: Essential Inspection Checklist</h4>
-                  <p class="text-gray-600 mb-6 leading-relaxed">A comprehensive checklist for conducting thorough construction site inspections and identifying potential hazards before they become incidents.</p>
-                  <div class="flex items-center text-sm text-gray-600">
-                    <span>5 min read</span>
-                    <span class="mx-2">•</span>
-                    <span>November 15, 2024</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-              <a class="block group h-full bg-white border border-gray-100 hover:border-blue-500 rounded-3xl shadow-sm hover:shadow-xl overflow-hidden transition-all duration-300" href="/articles/officer-due-diligence-legal-obligations">
-                <div class="p-6">
-                  <div class="mb-4">
-                    <span class="inline-block px-3 py-1 text-xs font-medium text-blue-900 bg-blue-100 rounded-full">Due Diligence</span>
-                  </div>
-                  <h4 class="text-2xl font-semibold mb-4 group-hover:text-blue-500 transition duration-200">Officer Due Diligence: Understanding Your Legal Obligations</h4>
-                  <p class="text-gray-600 mb-6 leading-relaxed">Company officers have specific WHS duties under Australian law. Understand what due diligence means and how to demonstrate it.</p>
-                  <div class="flex items-center text-sm text-gray-600">
-                    <span>8 min read</span>
-                    <span class="mx-2">•</span>
-                    <span>November 8, 2024</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-              <a class="block group h-full bg-white border border-gray-100 hover:border-blue-500 rounded-3xl shadow-sm hover:shadow-xl overflow-hidden transition-all duration-300" href="/articles/psychosocial-hazards-workplace">
-                <div class="p-6">
-                  <div class="mb-4">
-                    <span class="inline-block px-3 py-1 text-xs font-medium text-blue-900 bg-blue-100 rounded-full">Mental Health</span>
-                  </div>
-                  <h4 class="text-2xl font-semibold mb-4 group-hover:text-blue-500 transition duration-200">Psychosocial Hazards in the Workplace: What You Need to Address</h4>
-                  <p class="text-gray-600 mb-6 leading-relaxed">Mental health and psychosocial risks are now a key focus area for WHS compliance. Learn how to identify and manage these hazards.</p>
-                  <div class="flex items-center text-sm text-gray-600">
-                    <span>7 min read</span>
-                    <span class="mx-2">•</span>
-                    <span>November 1, 2024</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-              <a class="block group h-full bg-white border border-gray-100 hover:border-blue-500 rounded-3xl shadow-sm hover:shadow-xl overflow-hidden transition-all duration-300" href="/articles/iso-14001-environmental-management-explained">
-                <div class="p-6">
-                  <div class="mb-4">
-                    <span class="inline-block px-3 py-1 text-xs font-medium text-blue-900 bg-blue-100 rounded-full">Environmental</span>
-                  </div>
-                  <h4 class="text-2xl font-semibold mb-4 group-hover:text-blue-500 transition duration-200">ISO 14001: Environmental Management Systems Explained</h4>
-                  <p class="text-gray-600 mb-6 leading-relaxed">Environmental management is increasingly important for businesses. Discover how ISO 14001 can help you meet your sustainability goals.</p>
-                  <div class="flex items-center text-sm text-gray-600">
-                    <span>6 min read</span>
-                    <span class="mx-2">•</span>
-                    <span>October 25, 2024</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
+        </section>
       </section>
+      <!-- Article detail view (shown when ?name= query param exists) -->
+      <div id="articles-content"></div>
       <div id="footer-placeholder"></div>
     </div>
   </body>
